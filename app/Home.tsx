@@ -26,7 +26,7 @@ import pokemon from "@/public/pokemon.jpg"
 import certificate from "@/public/certificate_64.png"
 import Link from "next/link"
 import Email from "@/app/Email"
-import linkedin from "@/public/contacto/linkedIn.png"
+import linkedin from "@/public/contacto/linkedin.png"
 import discord from "@/public/contacto/discord.png"
 import gmail from "@/public/contacto/gmail.svg"
 
