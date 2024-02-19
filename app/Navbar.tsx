@@ -28,7 +28,7 @@ export default function Navbar(){
 
     return (
       <div className="z-50">
-        <input type="checkbox" className="peer hidden" checked={icon} id="showmenu"/>
+        <input type="checkbox" className="peer hidden" defaultChecked={icon} id="showmenu"/>
         <div className="
             h-12
             transition-all
@@ -67,7 +67,7 @@ export default function Navbar(){
                 { 
                     menuButtons.map(
                         (button,index) =>
-                          <Link href={`#${button[1]}`} scroll={false}>
+                          <Link href={`#${button[1]}`} scroll={false} key={index}>
                             <li
                               onClick={clickCheckbox}
                               key={index}
