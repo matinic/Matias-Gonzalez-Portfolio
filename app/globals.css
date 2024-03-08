@@ -104,3 +104,11 @@ html{
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .toggle {
+    @apply bg-contain bg-no-repeat w-10 h-10
+  }
+  .icon {
+    @apply bg-contain bg-no-repeat w-14 h-14 bg-center m-auto
+  }
+}
