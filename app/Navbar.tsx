@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export default function Navbar(){
 
-    const menuButtons: Array<Array<string>> = [['Descargar CV','descargarcv'],['Sobre Mi','sobremi'],['Conocimientos','conocimientos'],['Proyectos','proyectos'],['Contacto','contacto']]
+    const menuButtons: Array<Array<string>> = [['Sobre Mi','sobremi'],['Conocimientos','conocimientos'],['Proyectos','proyectos'],['Contacto','contacto'],['Descargar CV','descargarcv']]
 
     const input = React.useRef<HTMLInputElement>(null)
 
@@ -34,7 +34,7 @@ export default function Navbar(){
         <input type="checkbox" className="peer hidden" id="showmenu" ref={input}/>
         <label className="w-12 h-12 bg-menu-open fixed bg-[length:2.5rem_2.5rem] bg-no-repeat bg-center z-40  peer-checked:bg-menu-close sm:hidden" htmlFor="showmenu">
         </label>
-        <div className="h-12 transition-all peer-checked:h-1/2 w-full fixed bg-teal-700/50 backdrop-blur overflow-hidden sm:h-12">
+        <div className="h-12 transition-all peer-checked:h-1/2 w-full fixed bg-teal-500 overflow-hidden sm:h-12">
               <div className="grid h-full">
                 <div className="h-12 sm:hidden"></div>
                 <ul className="transition-all sm:visible sm:translate-y-0 sm:h-14 sm:mt-0 sm:bg-transparent sm:flex sm:items-center ">
@@ -43,7 +43,7 @@ export default function Navbar(){
                       (button,index) =>
                         <Link href={`#${button[1]}`} scroll={false} key={index} replace>
                           <li
-                            className="flex justify-center py-2 text-white font-bold text-base sm:px-4 scroll-smooth whitespace-nowrap"
+                            className="flex justify-center py-2 text-white text-base sm:px-4 scroll-smooth whitespace-nowrap"
                             onClick={navOptions}
                             data-key={button[1]}
                           >
